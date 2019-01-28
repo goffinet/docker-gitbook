@@ -13,7 +13,7 @@ RUN npm install --global gitbook-cli \
     calibre \
     fonts-roboto \
     bzip2 \
-  && npm install svgexport -g \
+  && npm install svgexport -g --unsafe-perm \
   && npm cache clear --force \
   && rm -rf /var/lib/apt/lists/* \
   && rm -rf /tmp/*
