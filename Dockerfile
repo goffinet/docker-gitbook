@@ -8,6 +8,7 @@ ENV GITBOOK_VERSION="3.2.3"
 RUN npm install --global gitbook-cli \
   && gitbook fetch ${GITBOOK_VERSION} \
   && npm install --global markdownlint-cli \
+  && npm install svgexport -g \
   && npm cache clear --force \
   && apt-get update \
   && apt-get install --no-install-recommends --no-install-suggests -y \
