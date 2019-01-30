@@ -14,6 +14,8 @@ RUN npm install --global gitbook-cli \
     fonts-roboto \
     bzip2 \
     ghostscript \
+    jpegoptim \
+    optipng \
   && npm install svgexport -g --unsafe-perm \
   && npm cache clear --force \
   && rm -rf /var/lib/apt/lists/* \
